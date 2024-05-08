@@ -1,0 +1,88 @@
+/* Estilos para las imágenes */
+.image-gallery-image,
+.image-gallery-video {
+  border: 2px solid #df101e; /* Borde de 2px sólido de color rojo */
+  border-radius: 8px; /* Borde redondeado */
+  overflow: hidden; /* Evita que el borde se expanda cuando la imagen o el video tienen un tamaño mayor */
+  box-sizing: border-box; /* Tamaño total incluye el borde */
+  max-width: 100%; /* Ajusta el tamaño máximo al 100% del contenedor */
+}
+.image-gallery-video {
+  position: relative; /* Establece la posición relativa para que los controles de video se superpongan correctamente */
+}
+.image-gallery-video video {
+  width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto */
+}
+/* Ajusta el tamaño de los elementos de la galería */
+.masonry-item {
+  padding: 12px; /* Ajusta el espacio entre las imágenes */
+}
+
+/* Ajusta el tamaño de las imágenes dentro de los elementos de la galería */
+.masonry-item img {
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  max-width: 900px; /* Ancho máximo deseado para las imágenes */
+}
+/* Configuración para el diseño de mampostería */
+@media screen and (min-width: 1100px) {
+  /* Cuando la pantalla es igual o mayor a 1100px */
+  .masonry-grid {
+    margin-left: -20px; /* Ajusta el margen negativo para contrarrestar el espacio entre columnas */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .masonry-item {
+    width: calc(100% / 3 - 90px); /* Ajusta el ancho de los elementos de la galería para que ocupen un tercio del contenedor */
+    margin: 30px; /* Ajusta el espacio entre las columnas */
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  /* Cuando la pantalla es menor a 1100px */
+  .masonry-item {
+    width: calc(100% / 2 - 40px); /* Ajusta el ancho de los elementos de la galería para que ocupen la mitad del contenedor */
+    margin: 20px; /* Ajusta el espacio entre las columnas */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Cuando la pantalla es menor a 700px */
+  .masonry-item {
+    width: calc(100% - 40px); /* Ajusta el ancho de los elementos de la galería para que ocupen todo el contenedor */
+    margin: 20px; /* Ajusta el espacio entre las columnas */
+  }
+}
+/* Estilos para el título */
+.title {
+  font-family: 'Roboto', sans-serif; /* Utiliza la fuente Roboto de Google Fonts */
+  font-size: 4.5rem; /* Tamaño del texto */
+  color: #000000; /* Color rosa */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+  margin-top: 50px; /* Espacio superior */
+  display: inline-block; /* Hace que el fondo se ajuste al tamaño del texto */
+  background-color: rgba(214, 132, 110, 0.6); /* Color de fondo con opacidad */
+  padding: 10px; /* Añade un poco de espacio alrededor del texto */
+  border-radius: 15px;
+  
+  
+}
+/* Establece la imagen de fondo y la hace repetir en mosaico */
+body {
+  background-image: url('https://i.imgur.com/kPP5ayn.png'); /* Enlace directo a la imagen de fondo */
+  background-repeat: repeat; /* Hace que la imagen se repita en mosaico */
+  background-color: #f0f0f0; /* Color de fondo de respaldo */
+}
+ 
+
+.audio-player {
+  width: 350px; /* Ancho del reproductor de audio */
+  height: 100px;
+  margin-left: 1200px; /* Margen izquierdo para separarlo del contenido */
+}
+
+/* Personaliza otros estilos según tus preferencias */
+
+
